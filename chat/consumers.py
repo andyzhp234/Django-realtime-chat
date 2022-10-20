@@ -54,8 +54,8 @@ class ChatRoomConsumer(AsyncWebsocketConsumer):
         "timestamp" : str(self.get_pst_time()),
       })
 
-  def get_pst_time():
-    date_format='%m_%d_%Y_%H_%M_%S_%Z'
+  def get_pst_time(self):
+    date_format='%Y-%m-%d %H:%M:%S'
     date = datetime.now(tz=utc)
     date = date.astimezone(timezone('US/Pacific'))
     pstDateTime=date.strftime(date_format)
