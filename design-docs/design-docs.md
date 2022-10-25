@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <<<<<<< HEAD:design-docs/design-docs.md
+=======
+>>>>>>> 92c4763 (Update design-docs.md)
 
 # Design doc
 
@@ -14,9 +17,18 @@ Overall a very challenging and fun project!  <br/>
 # :man_technologist: Overview
 I have started this project with the purpose of learning how to develop a mid/high-level complexity Web Application that supports real-time communcations using Websockets and HTTP protocol. For Frontend, I used React to implement the UI and connections to backend websocket. For backend, I used Django and Django Restframework for REST APIs and Websocket connections (Django channel).
 <br/>
+<<<<<<< HEAD
 This Application allows people to communicate with other people around the world in real time. It's recommended for user to Signup their own account as they can chat with other's with their own name. If user don't want to sign up, they can also use the demo user to log in the application.
 <br/>
 Currently the application only supports 4 chatroom, which are Game, Study, Movie, and Music chat room; however, more chatroom can be added very easily in the future if the user wants to.
+=======
+<br/>
+This Application allows people to communicate with other people around the world in real time. It's recommended for user to Signup their own account as they can chat with other's with their own name. If user don't want to sign up, they can also use the demo user to log in the application.
+<br/>
+<br/>
+Currently the application only supports 4 chatroom, which are Game, Study, Movie, and Music chat room; however, more chatroom can be added very easily in the future.
+<br/>
+>>>>>>> 92c4763 (Update design-docs.md)
 <br/>
 I put a lot of effort in this Project and I hope that you could enjoy it.
 
@@ -24,6 +36,7 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
 # Problem Statement
 
 ## Initial Project Specifications
+<<<<<<< HEAD
 
  1. Real Live Chat
  2. User Registration
@@ -31,6 +44,23 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
  4. Record / Save conversations
  5. Delete / Edit message  (Optional)
  6. More....
+=======
+ 
+ 1. Better Chat Interface
+ 2. Real Time Group Chat
+ 3. User Registration
+ 4. Track Conversations and Users in Chat
+ 5. Record / Save conversations
+ 6. Delete / Edit message  (Optional)
+ 7. Zoom Video Room
+ 8. AI Bot Chat Room
+ 9. Send Emojis
+ 10. Private Chat room
+ 11. Current Online Users??
+ 12. Icons
+ 13. Send Images
+ 14. More
+>>>>>>> 92c4763 (Update design-docs.md)
 
 
 ##  Web Sockets
@@ -173,6 +203,13 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
 
 # Section 2: HOW
 
+<<<<<<< HEAD
+=======
+
+### Deployment: Heroku
+
+
+>>>>>>> 92c4763 (Update design-docs.md)
 ### Third-Party Libraries
 | Third-party library name and version | Why it is needed |
 |--|--|
@@ -260,6 +297,7 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
 <img src="https://github.com/andyzhp234/realtime-group-chat-app/blob/main/design-docs/django-channel.png" alt="" />
 
 <img src="https://github.com/andyzhp234/realtime-group-chat-app/blob/main/design-docs/flow-chart.png" alt="" />
+<<<<<<< HEAD
 =======
 
 # Design doc
@@ -526,3 +564,5 @@ I put a lot of effort in this Project and I hope that you could enjoy it.
 
 <img src="https://github.com/andyzhp234/realtime-group-chat-app/blob/main/designDoc/flow_chart.png" alt="" />
 >>>>>>> 64bd593 (Update designDoc.md):designDoc/designDoc.md
+=======
+>>>>>>> 92c4763 (Update design-docs.md)
