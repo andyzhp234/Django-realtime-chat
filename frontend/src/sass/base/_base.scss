@@ -1,0 +1,30 @@
+@use "../abstracts/colors";
+@use "../abstracts/fonts";
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+// simple reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: fonts.$font-stack;
+  background-color: colors.$background-color-white-600;
+  color: colors.$text-color-black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}

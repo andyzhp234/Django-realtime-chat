@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+$font-stack: "Open Sans", sans-serif;
+$font-size-large: 2rem;
+
+.fw700 {
+  font-weight: 700;
+}
+
+.taCenter {
+  text-align: center;
+}
+
+.taEnd {
+  text-align: end;
+}
+
+.fsMedium {
+  font-size: 1.5rem;
+}
+
+.fsLarge {
+  font-size: 2rem;
+}

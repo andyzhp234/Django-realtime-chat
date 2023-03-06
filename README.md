@@ -1,38 +1,9 @@
-# realtime-group-chat-app
+# Django Realtime Group Chat App
 
-DEMO: <a href="https://realtime-group-chat-andyzhp.herokuapp.com/"> Visit DEMO <a/>
+# Important
 
-# :man_technologist: Overview
-I have started this project with the purpose of learning how to develop a mid/high-level complexity Web Application that supports real-time communcations using Websockets and HTTP protocol. For Frontend, I used React to implement the UI and connections to backend websocket. For backend, I used Django and Django Restframework for REST APIs and Websocket connections (Django channel).
-<br/>
-This Application allows people to communicate with other people around the world in real time. It's recommended for user to Signup their own account as they can chat with other's with their own name. If user don't want to sign up, they can also use the demo user to log in the application.
-<br/>
-Currently the application only supports 4 chatroom, which are Game, Study, Movie, and Music chat room; however, more chatroom can be added very easily in the future if the user wants to.
-<br/>
-I put a lot of effort in this Project and I hope that you could enjoy it.
+Note: While this chat app is still functional, I recommend checking out my newest chat app built using express.js, node.js, and socket.io for a more advanced experience. My new app includes more features and a cleaner user interface. You can find my new group chat app at https://github.com/andyzhp234/QuickChat.
 
-# User Experience
-<img src="./project-images/signup.JPG" alt="" />
+I've decided to keep this project available on GitHub as a reference and for posterity. It serves as a record of my earlier work and shows how my development skills have evolved over time. If you're interested in learning more about our chat app development process, or want to see how we've improved over time, we encourage you to check out my newest project.
 
-<img src="./project-images/login.JPG" alt="" />
-
-<img src="./project-images/lobby.JPG" alt="" />
-
-<img src="./project-images/chatroom.JPG" alt="" />
-
-
-# Technologies
-
- - REACT
- - REACT Context
- - REACT Hook
- - Node.js
- - JWT
- - Axios
- - Django
- - Django Restframework
- - Django Restframework-simplejwt
- - Django Channel (daphne)
- - SQLite 
- - Redis
-
+Thank you for taking the time to visit this GitHub repository.

@@ -1,0 +1,37 @@
+@use "../abstracts/breakpoints";
+@use "../abstracts/colors";
+
+.login {
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+
+  &__form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px 50px;
+
+    & > * {
+      max-width: 400px;
+      margin: 10px 0px;
+    }
+  }
+
+  &__bgImg-container {
+    width: 60%;
+    overflow: hidden;
+    position: relative;
+    img {
+      object-fit: cover;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    @include breakpoints.breakpoint(tablet) {
+      display: none;
+    }
+  }
+}

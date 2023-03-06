@@ -1,0 +1,27 @@
+@use "../abstracts/breakpoints";
+@use "../abstracts/colors";
+
+.signup {
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__form {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: colors.$login-container-bg-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+    & > * {
+      width: 100%;
+      margin: 10px 0px;
+    }
+  }
+}

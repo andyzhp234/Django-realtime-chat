@@ -1,0 +1,141 @@
+@use "../abstracts/breakpoints";
+@use "../abstracts/colors";
+
+.chat {
+  display: flex;
+  position: relative;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.chatbox {
+  flex-grow: 1;
+  height: 100vh;
+  background-color: colors.$background-color-white-900;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  &__message-container {
+    // flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  &__message {
+    width: 95%;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 16px;
+    transition: 300ms;
+    background-color: colors.$background-color-white-600;
+    &:hover {
+      background-color: colors.$element-selected-color;
+    }
+  }
+
+  &__inputBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  @include breakpoints.breakpoint(tablet) {
+    padding-top: 50px;
+  }
+}
+
+.sidebar {
+  min-width: 280px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: colors.$background-color-black-600;
+  color: colors.$background-color-white-900;
+  @include breakpoints.breakpoint(tablet) {
+    transform: translateX(-100%);
+    position: fixed;
+    transition: transform 350ms ease-out;
+  }
+  &.on {
+    transform: translateX(0%);
+  }
+
+  & > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__top {
+    flex-grow: 1;
+    width: 100%;
+    padding: 5px;
+    border-top: 1px solid colors.$background-color-white-900;
+  }
+
+  &__bottom {
+    align-self: flex-end;
+    width: 100%;
+    padding: 5px;
+    border-top: 1px solid colors.$background-color-white-900;
+  }
+
+  &__options {
+    display: flex;
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 300ms;
+    &:hover {
+      background-color: colors.$background-color-black-400;
+    }
+
+    &--selected {
+      background-color: colors.$background-color-black-400;
+    }
+  }
+}
+
+.header {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  background-color: colors.$background-color-black-600;
+  border-bottom: 1px solid colors.$background-color-white-900;
+  @include breakpoints.breakpoint(tablet) {
+    display: block;
+  }
+}
+
+.mobile-nav-toggle {
+  display: none;
+  z-index: 9999;
+  position: absolute;
+  background-image: url("/src/assets/icon-hamburger-white.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  height: 50px;
+  aspect-ratio: 1 / 1;
+  left: 15px;
+  border: none;
+  @include breakpoints.breakpoint(tablet) {
+    display: block;
+  }
+}
